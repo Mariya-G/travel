@@ -1,0 +1,35 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.photo__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  grid-auto-rows: 250px;
+  margin: 40px 0 10px 0;
+}
+
+.photo__item {
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.photo__item:nth-child(1) {
+  grid-column: span 2;
+}
+
+
+.photo__item:nth-child(5n) {
+  grid-column: span 2;
+}

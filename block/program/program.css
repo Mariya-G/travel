@@ -1,0 +1,119 @@
+.program {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+}
+
+.program__images {
+  display: grid;
+  margin: 100px 0;
+}
+
+.program__images-mountains {
+  grid-area: 1/2;
+}
+.program__images-house {
+  grid-area: 1/2;
+  align-self: start;
+  justify-self: start;
+  margin: 100px 0 0 134px;
+}
+
+.program__title {
+  color: #f2be22;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;  
+  
+}
+
+.program__title_light {
+  margin: 164px 0 8px 0;
+}
+
+.program__title_gray {
+  margin: 0 0 8px 0;
+}
+
+.program__subtitle {
+  color: #18121e;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  margin: 0;
+}
+
+.program__text {
+  margin: 40px 0 0 0;
+  color: #18121e;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.program__button {
+  padding: 16px 36px;
+  border-radius: 4px;
+  background: #1a3e3e;
+  color: #fdfdfd;
+  border: none;
+  margin-top: 40px;
+}
+
+.program__gray {
+  background: #f3f5f4;
+  width: 100%;
+  padding: 80px 0 100px 0;
+}
+
+.program__block {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  row-gap: 40px;
+  margin: 40px 0 0 0;
+}
+
+.program__icon {
+  display: flex;
+  align-self: center;
+}
+
+.program__block-title {
+  color: #18121E;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.216px;
+  margin: 0 0 4px 0;
+}
+
+.program__block-text {
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.program__pictures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: end;
+  align-content: center;
+}
+
+.program__picture {
+  max-height: 250px;
+  object-fit: contain;
+}

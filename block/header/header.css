@@ -1,0 +1,149 @@
+.header {
+  width: 100%;
+  min-height: 985px;
+  background: url("../../images/slide.png") no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin: 16px 230px 0 0;
+}
+
+.header__menu {
+  display: flex;
+  padding: 0;
+  margin-right: 49px;
+}
+
+.header__menu-container {
+  display: flex;
+}
+
+.header__menu-list {
+  list-style: none;
+  margin-left: 24px;
+}
+
+.header__menu-link {
+  font-size: 18px;
+  font-family: Nunito Sans, Arial, sans-serif;
+  color: #fdfdfd;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__menu-list:first-child {
+  margin-left: 0;
+}
+
+.header__button-advice {
+  color: #fdfdfd;
+  font-size: 16px;
+  font-family: Nunito Sans, Arial, sans-serif;
+  background-color: #1a3e3e;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  width: 157px;
+}
+
+.header__title {
+  color: #fdfdfd;
+  font-family: NEXT ART;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  margin: 0 0 41px 0;
+}
+
+.header__section {
+  padding-bottom: 82px;
+}
+
+.header__found-program {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  padding: 40px 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__input {
+  height: 52px;
+  padding: 0 16px;
+  display: flex;
+  border: 1px solid #fdfdfd;
+  border-radius: 8px;
+  background: transparent;
+  width: 270px;
+  height: 52px;
+  color: #fdfdfd;
+  box-sizing: border-box;
+}
+
+.header__input:focus {
+  border: 1px solid #1a3e3e;
+}
+
+.header__input:focus-visible {
+  border: 1px solid #1a3e3e;
+  outline: transparent;
+}
+
+.header__input-vector {
+  background-image: url(../../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  outline: none;
+  cursor: pointer;
+  appearance: none; /*убрать дефолтную стрелку выбора*/
+}
+
+.header__input-data::-webkit-calendar-picker-indicator {
+  /*изменить значок выбора даты*/
+  filter: invert(1);
+}
+
+.header__button {
+  width: 213px;
+  color: #1a3e3e;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #fdfdfd;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.header__input-option {
+  color: #000;
+  height: 40px;
+}
+
+.header__input-option:hover,
+.header__input-option:checked {
+  box-shadow: 0 0 10px 100px #1a3e3e inset;
+}
+
+.header__input-option:checked {
+  background-color: #2e6d6d;
+}

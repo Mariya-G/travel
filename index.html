@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Путешествия</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <img src="./images/logo.svg" class="header__logo" alt="Путешествия" />
+        <div class="header__menu-container">
+          <ul class="header__menu">
+            <li class="header__menu-list">
+              <a href="#" class="header__menu-link">Главная</a>
+            </li>
+            <li class="header__menu-list">
+              <a href="#" class="header__menu-link">Про гида</a>
+            </li>
+            <li class="header__menu-list">
+              <a href="#" class="header__menu-link">Программа тура</a>
+            </li>
+            <li class="header__menu-list">
+              <a href="#" class="header__menu-link">Стоимость</a>
+            </li>
+            <li class="header__menu-list">
+              <a href="#" class="header__menu-link">Блог</a>
+            </li>
+            <li class="header__menu-list">
+              <a href="#" class="header__menu-link">Контакты</a>
+            </li>
+          </ul>
+          <button class="header__button-advice">Консультация</button>
+        </div>
+      </div>
+      <section class="header__section container">
+        <h1 class="header__title">
+          Насладись прогулкой в горах с командой единомышленников
+        </h1>
+        <form class="header__found-program">
+          <select
+            class="header__input header__input-vector"
+            value="Локация для тура"
+          >
+            <option class="header__input-option">1</option>
+          </select>
+          <input
+            class="header__input header__input-data"
+            value="Дата похода"
+            type="date"
+            name="calendar"
+          />
+          <select class="header__input header__input-vector" value="Участники">
+            <option class="header__input-option">4</option>
+            <option class="header__input-option">5</option>
+          </select>
+          <button class="header__button" type="button">Найти программу</button>
+        </form>
+      </section>
+    </header>
+    <main class="main">
+    <section class="program container">
+      <article class="program__images">
+        <img
+          class="program__image program__images-mountains"
+          src="./images/mountains.png"
+        />
+        <img
+          class="program__image program__images-house"
+          src="./images/hous.png"
+        />
+      </article>
+      <article class="program__information">
+        <h2 class="program__title program__title_light">о нашем походе</h2>
+        <p class="program__subtitle">
+          Исследуйте все горные массивы мира вместе с нами
+        </p>
+        <p class="program__text">
+          Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+          есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни
+          из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых
+          странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в
+          классической латинской литературе.
+        </p>
+        <button class="program__button">Программа тура</button>
+      </article>
+    </section>
+    <section class="program__gray">
+      <div class="program container">
+        <article class="program__information">
+          <h2 class="program__title program__title_gray">наше предложение</h2>
+          <p class="program__subtitle">Лучшие программы для тебя</p>
+          <p class="program__text">
+            Его корни уходят в один фрагмент классической латыни 45 года н.э.,
+            то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+            латыни из колледжа.
+          </p>
+          <article class="program__block">
+            <img src="./images/guide.svg" class="program__icon" />
+            <div class="program__info">
+              <p class="program__block-title">Опытный гид</p>
+              <p class="program__block-text">
+                Для современного мира базовый вектор развития предполагает
+                независимые способы реализации соответствующих условий
+                активизации.
+              </p>
+            </div>
+            <img src="./images/safe-approach.svg" class="program__icon" />
+            <div class="program__info">
+              <p class="program__block-title">Безопасный поход</p>
+              <p class="program__block-text">
+                Для современного мира базовый вектор развития предполагает
+                независимые способы реализации соответствующих условий
+                активизации.
+              </p>
+            </div>
+            <img src="./images/prices.svg" class="program__icon" />
+            <div class="program__info">
+              <p class="program__block-title">Лояльные цены</p>
+              <p class="program__block-text">
+                Для современного мира базовый вектор развития предполагает
+                независимые способы реализации соответствующих условий
+                активизации.
+              </p>
+            </div>
+          </article>
+          <button class="program__button">Стоимость программ</button>
+        </article>
+        <article class="program__pictures">
+          <img class="program__picture" src="./images/water.png" />
+          <img class="program__picture" src="./images/man.png" />
+          <img class="program__picture" src="./images/snow.png" />
+          <img class="program__picture" src="./images/scenery.png" />
+        </article>
+      </div>
+    </section>
+    <section class="popular-program container">
+      <h2 class="popular-program__title program__title">
+        по версии отдыхающих
+      </h2>
+      <p class="popular-program__subtitle program__subtitle">
+        Популярные направления
+      </p>
+      <div class="popular-program__list">
+        <article class="popular-program__item">
+          <img
+            src="./images/popular_1.png"
+            alt=""
+            class="popular-program__bg-image"
+          />
+          <div class="popular-program__rating">
+            <img src="./images/star.svg" class="popular-program__star" alt="" />
+            <p class="popular-program__number">4.7</p>
+          </div>
+          <div class="popular-program__block">
+            <div class="popular-program__denotation">
+              <p class="popular-program__name">Озеро возле гор</p>
+              <p class="popular-program__subname">романтическое приключение</p>
+            </div>
+            <p class="popular-program__price">480 $</p>
+          </div>
+        </article>
+        <article class="popular-program__item">
+          <img
+            src="./images/popular_2.png"
+            alt=""
+            class="popular-program__bg-image"
+          />
+          <div class="popular-program__rating">
+            <img src="./images/star.svg" class="popular-program__star" alt="" />
+            <p class="popular-program__number">4.5</p>
+          </div>
+          <div class="popular-program__block">
+            <div class="popular-program__denotation">
+              <p class="popular-program__name">Ночь в горах</p>
+              <p class="popular-program__subname">в компании друзей</p>
+            </div>
+            <p class="popular-program__price">500 $</p>
+          </div>
+        </article>
+        <article class="popular-program__item">
+          <img
+            src="./images/popular_3.png"
+            alt=""
+            class="popular-program__bg-image"
+          />
+          <div class="popular-program__rating">
+            <img src="./images/star.svg" class="popular-program__star" alt="" />
+            <p class="popular-program__number">5.0</p>
+          </div>
+          <div class="popular-program__block">
+            <div class="popular-program__denotation">
+              <p class="popular-program__name">Йога в горах</p>
+              <p class="popular-program__subname">
+                для тех, кто забоится о себе
+              </p>
+            </div>
+            <p class="popular-program__price">230 $</p>
+          </div>
+        </article>
+      </div>
+      <button class="popular-program__button program__button">
+        Рейтинг направлений
+      </button>
+    </section>
+    <section class="program__gray">
+      <div class="blog container">
+        <h2 class="popular-program__title program__title">
+          делимся впечатлениями
+        </h2>
+        <p class="popular-program__subtitle program__subtitle">
+          Блог о путешествиях
+        </p>
+        <article class="blog__posts">
+          <article class="blog__post">
+            <img src="./images/Italiya.png" alt="" class="blog__image" />
+            <div class="blog__info">
+              <div class="blog__text">
+                <a class="blog__title"
+                  >Красивая Италия, какая она в реальности?</a
+                >
+                <p class="blog__anotation">
+                  Для современного мира базовый вектор развития предполагает
+                  независимые способы реализации соответствующих условий
+                  активизации.
+                </p>
+              </div>
+              <div class="blog__elements">
+                <p class="blog__date">02/02/2024</p>
+                <a src="#" class="blog__link">читать статью</a>
+              </div>
+            </div>
+          </article>
+          <article class="blog__post">
+            <img src="./images/clouds.png" alt="" class="blog__image" />
+            <div class="blog__info">
+              <div class="blog__text">
+                <a class="blog__title"
+                  >Долой сомнения! Весь мир открыт для вас!</a
+                >
+                <p class="blog__anotation">
+                  Для современного мира базовый вектор развития предполагает
+                  независимые способы реализации соответствующих условий
+                  активизации ... независимые способы реализации соответствующих
+                  условий активизации ...Для современного мира базовый вектор
+                  развития предполагает независимые способы реализации
+                  соответствующих условий активизации ... независимые способы
+                  реализации соответствующих условий активизации ...
+                </p>
+              </div>
+              <div class="blog__elements">
+                <p class="blog__date">02/02/2024</p>
+                <a src="#" class="blog__link">читать статью</a>
+              </div>
+            </div>
+          </article>
+          <article class="blog__post">
+            <img src="./images/street.png" alt="" class="blog__image" />
+            <div class="blog__info">
+              <div class="blog__text">
+                <a class="blog__title"
+                  >Как подготовиться к путешествию в одиночку?
+                </a>
+                <p class="blog__anotation">
+                  Для современного мира базовый вектор развития предполагает.
+                </p>
+              </div>
+              <div class="blog__elements">
+                <p class="blog__date">02/02/2024</p>
+                <a src="#" class="blog__link">читать статью</a>
+              </div>
+            </div>
+          </article>
+          <article class="blog__post">
+            <img src="./images/tag-mahal.png" alt="" class="blog__image" />
+            <div class="blog__info">
+              <div class="blog__text">
+                <a class="blog__title">Индия ... летим?</a>
+                <p class="blog__anotation">
+                  Для современного мира базовый вектор развития предполагает.
+                </p>
+              </div>
+              <div class="blog__elements">
+                <p class="blog__date">02/02/2024</p>
+                <a src="#" class="blog__link">читать статью</a>
+              </div>
+            </div>
+          </article>
+        </article>
+        <button class="popular-program__button program__button">
+          Другие материалы
+        </button>
+      </div>
+    </section>
+    <section class="photo container">
+      <h2 class="popular-program__title program__title">фото-отчет</h2>
+      <p class="popular-program__subtitle program__subtitle">
+        Делимся впечатлениями
+      </p>
+      <article class="photo__items">
+        <img class="photo__item" src="./images/lake.jpg" alt="" />
+        <img class="photo__item" src="./images/hotel.jpg" alt="" />
+        <img class="photo__item" src="./images/boat-in-the-lake.jpg" alt="" />
+        <img class="photo__item" src="./images/hotel.jpg" alt="" />
+        <img class="photo__item" src="./images/boat-in-the-lake.jpg" alt="" />
+        <img class="photo__item" src="./images/lake.jpg" alt="" />
+      </article>
+      <button class="popular-program__button program__button">Еще фото</button>
+    </section>
+    <section class="callback container">
+      <article class="callback__trips-text">
+        <p class="callback__title">путешествия</p>
+        <p class="callback__subtitle">
+          Были с нами в туре? Делитесь своими фото
+        </p>
+      </article>
+      <article class="callback__items">
+        <p class="callback__add-text">Добавьте свою фотографию</p>
+        <form class="callback__form">
+          <input class="callback__input" placeholder="Ждем ссылку.." />
+          <button class="callback__button">Добавить фото</button>
+        </form>
+        <p class="callback__text">
+          Благодарим, что остаетесь с нами и делитесь впечателниями!
+        </p>
+      </article>
+    </section>
+    <footer class="footer">
+      <section class="footer__container container">
+        <article class="footer__items">
+          <p class="footer__title">Компания «РумТибет»</p>
+          <p class="footer__title-about-us">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+        </article>
+        <article class="footer__items">
+          <p class="footer__title">Наши услуги</p>
+          <ul  class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link">Прогулки в горы летом</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Зимние походы в горы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Посещение храмов в горах</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Экстремальные виды туризма</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Походы в джунглях Амазонии</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Поездка в Африку</a>
+            </li>
+          </ul>
+        </article>
+        <article class="footer__items">
+          <p class="footer__title">Важно для путешествий</p>
+          <ul  class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link">Как собрать в долгий поход?</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Жизненно важные предметы для похода</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Медицинская страховка, гарантии безопасности</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Если вы врач - загляните сюда</a>
+            </li>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </footer>
+    </main>
+    <section class="popup popup__advice">
+      <article class="popup__container">
+        <button class="popup__close"></button>
+        <p class="program__text">
+          Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+          есть более двух тысячелетий назад.
+        </p>
+      </article>
+    </section>
+    <section class="popup popup__program">
+      <article class="popup__container">
+        <button class="popup__close"></button>
+        <p class="program__text">
+          Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+          есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни
+          из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых
+          странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в
+          классической латинской литературе.
+        </p>
+      </article>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
