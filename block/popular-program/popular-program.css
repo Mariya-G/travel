@@ -102,4 +102,8 @@
   .popular-program__price {
     font-size: 15px;
   }
+
+  .popular-program__name {
+    font-size: 18px;
+  }
 }
