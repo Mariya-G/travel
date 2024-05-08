@@ -25,8 +25,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;  
-  
+  line-height: 20px;
 }
 
 .program__title_light {
@@ -85,7 +84,7 @@
 }
 
 .program__block-title {
-  color: #18121E;
+  color: #18121e;
   font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -116,4 +115,11 @@
 .program__picture {
   max-height: 250px;
   object-fit: contain;
+}
+
+@media screen and (max-width: 980px) {
+  .program__picture {
+    max-height: 100%;
+    width: 48%;
+  }
 }
