@@ -187,7 +187,7 @@
   }
 
   .header__menu-container {
-    z-index: 99;
+    /* z-index: 99; */
   }
 
   #menu {
@@ -220,12 +220,19 @@
     padding: 20px;
     width: 100%;
     font-size: 18px;
-    margin: 0;
+    margin: 20px 0;
+    padding: 0;
     text-align: center;
   }
+
+  .header__menu-list:last-child {
+    margin-bottom: 40px;
+  }
+
   .header__menu-link {
     color: #000;
   }
+
   label,
   label::before,
   label::after {
@@ -275,6 +282,7 @@
   #menu:checked ~ ul {
     transition: 1s;
     opacity: 100%;
+    z-index: 99;
   }
   .header__button-advice {
     align-self: center;

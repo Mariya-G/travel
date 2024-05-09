@@ -62,7 +62,7 @@
   background: #1a3e3e;
   color: #fdfdfd;
   border: none;
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 .program__gray {
@@ -74,7 +74,7 @@
 .program__block {
   display: grid;
   grid-template-columns: 0.5fr 4fr;
-  row-gap: 40px;
+  gap: 40px 20px;
   margin: 40px 0 0 0;
 }
 
@@ -116,10 +116,30 @@
   max-height: 250px;
   object-fit: contain;
 }
-
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1180px) {
   .program__picture {
     max-height: 100%;
     width: 48%;
+  }
+
+  .program__images-house {
+    width: 60%;
+  }
+
+  .program__images-mountains {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .program__images-house {
+    width: 50%;
+  }
+
+  .program__images-mountains {
+    width: 50%;
+  }
+
+  .program__title_light {
+    margin: 50px 0 10px 0;
   }
 }
