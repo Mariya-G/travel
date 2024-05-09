@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   transform: translateY(102px);
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   z-index: 2;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .callback__title {
-  color: #F2BE22;
+  color: #f2be22;
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
@@ -22,7 +22,7 @@
 }
 
 .callback__subtitle {
-  color: #18121E;
+  color: #18121e;
   font-size: 26px;
   line-height: 120%;
   font-weight: 900;
@@ -30,14 +30,14 @@
 }
 
 .callback__add-text {
-  color: #18121E;
+  color: #18121e;
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
 }
 
 .callback__input {
-  background-color: #F3F5F4;
+  background-color: #f3f5f4;
   border-radius: 4px;
   height: 44px;
   max-width: 280px;
@@ -46,7 +46,7 @@
   padding: 12px 16px;
   box-sizing: border-box;
   font-size: 14px;
-  color: #18121E;
+  color: #18121e;
 }
 
 .callback__input:focus-visible {
@@ -60,8 +60,34 @@
   border-radius: 4px;
   border: none;
   padding: 12px 24px;
+  width: 200px;
 }
 
 .callback__items {
   margin: 38px 0 40px 0;
+}
+
+@media screen and (max-width: 980px) {
+  .callback {
+    padding: 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .callback__form {
+    display: flex;
+  }
+  .callback__trips-text {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .callback__input {
+    width: 73%;
+    max-width: 73%;
+  }
+
+  .callback__items {
+    margin: 20px 0 0 0;
+  }
 }
