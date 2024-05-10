@@ -144,4 +144,12 @@
   .program__title_light {
     margin: 50px 0 10px 0;
   }
+
+  .program__text {
+    font-size: 16px;
+  }
+
+  .program__subtitle {
+    font-size: 25px;
+  }
 }
