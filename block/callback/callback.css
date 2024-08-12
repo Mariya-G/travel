@@ -61,10 +61,16 @@
   border: none;
   padding: 12px 24px;
   width: 200px;
+  cursor: pointer;
 }
 
 .callback__items {
   margin: 38px 0 40px 0;
+}
+
+.callback__button_disabled {
+  background-color: #ccc;
+  cursor:default;
 }
 
 @media screen and (max-width: 980px) {
