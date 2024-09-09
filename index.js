@@ -64,6 +64,7 @@ function btnEnable() {
   btnFormPhotos.disabled = false;
   btnFormPhotos.classList.remove('callback__button_disabled')
 }
+let photos = JSON.parse(localStorage.getItem('photos')) || [];
 
 function addPhoto(e) {
   e.preventDefault();
@@ -74,27 +75,39 @@ function addPhoto(e) {
   newPhotos.alt = 'Фото пользователя';
   containerPhotos.append(newPhotos);
 
+  photos.push(linkPhoto);
+  localStorage.setItem('photos', JSON.stringify(photos));
+
   btnDisable();
   inputPhotos.value = '';
+  
+  
 }
+
+// Функция для отображения сохраненных фотографий при загрузке страницы
+function displayPhotos() {
+  const storedPhotos = JSON.parse(localStorage.getItem('photos'));
+  if (storedPhotos) {
+    storedPhotos.forEach((photo) => {
+      const newPhotos = document.createElement('img');
+      newPhotos.classList.add('photo__item');
+      newPhotos.src = photo;
+      newPhotos.alt = 'Фото пользователя';
+      containerPhotos.append(newPhotos);
+    });
+  }
+  console.log(storedPhotos)
+}
+displayPhotos();
 
 btnFormPhotos.addEventListener('click', addPhoto);
 
-inputPhotos.addEventListener('keyup', (e)=> {
+inputPhotos.addEventListener('input', (e)=> {
   const value = e.currentTarget.value;
   if(value === ''){
     btnDisable()
 
   } else {
     btnEnable() 
-  }
-});
-
-inputPhotos.addEventListener('change', (e)=> {
-  const value = e.currentTarget.value;
-  if(value !== ''){
-    btnEnable()
-  } else {
-    btnDisable()
   }
 });
